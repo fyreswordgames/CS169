@@ -1,1 +1,1 @@
-Repository for Homeowkr Assignments for CS169
+Repository for Homework Assignments for CS169
