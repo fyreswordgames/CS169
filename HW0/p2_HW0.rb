@@ -13,7 +13,7 @@ end
 #NOTE: be sure it works for both upper and lower case and for nonletters!
 
 def starts_with_consonant?(s)	
-	s.downcase =~ /^[bcdfghjklmnpqrstvwxy]/ 
+	s.downcase =~ /^[bcdfghjklmnpqrstvwxy]/
 end
 
 
@@ -22,17 +22,11 @@ end
 #NOTE: be sure it returns false if the string is not a valid binary number!
 
 def valid_binary?(s)
-	return false unless s =~ /^[10]*$/ 
+	s =~ /^[10]+$/ 
 end
 
 def binary_multiple_of_4?(s)
-	if s == "0"
-		true
-	elsif s =~ /^[10]*$/ #
-		s =~ /^[10]*00$/ #
-	else
-		false
-	end
+	valid_binary?(s) && s.to_i % 4 == 0
 end
 
 #check for valid input
