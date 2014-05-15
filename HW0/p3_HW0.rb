@@ -20,10 +20,9 @@ class BookInStock
 		@price = price
 	end
 
-	attr_accessor :isbn
-	attr_accessor :price
+	attr_accessor :isbn, :price
 
-	def price_as_string()
+	def price_as_string
 		"$#{sprintf( "%0.02f", @price)}"
 	end
 

@@ -1,4 +1,4 @@
-#p1_HW0_CS169.1x
+#p1_HW0_CS169.1x 
 
 #Define a method sum which takes an array of integers as an argument 
 #and returns the sum of its elements. For an empty array it should return zero.
@@ -29,7 +29,7 @@ end
 
 def sum_to_n?(array, n)
 	combinations = array.combination(2).to_a
-	summed = combinations.map{|subarray| subarray.reduce(:+) }
+	summed = combinations.map{ |subarray| subarray.reduce(:+) }
 	compare = summed.map{|a| a == n }
 	compare.include?(true) ? true : false
 end
